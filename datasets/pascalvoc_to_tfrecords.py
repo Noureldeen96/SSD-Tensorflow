@@ -79,7 +79,7 @@ def _process_image(directory, name):
       width: integer, image width in pixels.
     """
     # Read the image file.
-    filename = directory + DIRECTORY_IMAGES + name + '.jpg'
+    filename = directory + DIRECTORY_IMAGES + name + '.jpeg'
     image_data = tf.gfile.FastGFile(filename, 'rb').read()
 
     # Read the XML annotation file.
